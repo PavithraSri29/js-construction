@@ -44,7 +44,7 @@ function Header() {
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           {/* <a href="#pricing">pricing</a> */}
-          <a href="#contact">contact</a>
+          <a href="#contact">Contact</a>
           <a href="#blogs">Blogs</a>
         </nav>
 
