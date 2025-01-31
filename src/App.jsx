@@ -20,7 +20,7 @@ function App() {
       <Services />
       <Projects />
       <Reviews />
-      <Hori />
+      {/* <Hori /> */}
       <Contact />
       <Blogs />
       <ClientLogo />
