@@ -35,7 +35,7 @@ function Header() {
     <>
       <header className="header">
         <a href="#" className="logo">
-          Jayaswathy<span> Constructions</span>
+         Constructions<span> pvt ltd</span>
         </a>
 
         <nav className="navbar">
@@ -86,21 +86,21 @@ function Header() {
         <div className="info">
           <FontAwesomeIcon icon={faPhone} className="icon" style={{ fontSize: '3rem' }}/>
           <h3>phone number</h3>
-          <p>+91 98401 55111</p>
-          <p>+91 99401 55511</p>
+          <p>+91 9876543210</p>
+          <p>+91 9874561230</p>
         </div>
 
         <div className="info">
           <FontAwesomeIcon icon={faEnvelope} className="icon" style={{ fontSize: '3rem' }}/>
           <h3>email address</h3>
-          <p>jayaswathyj@gmail.com</p>
+          <p>Constructions@gmail.com</p>
           {/* <p>user2@email.com</p> */}
         </div>
 
         <div className="info">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" style={{ fontSize: '3rem' }}/>
           <h3>office address</h3>
-          <p>No: 36, Kaveri Street, Rajaji Nagar, Villivakkam, Chennai-600 049</p>
+          <p>No: 36, Kamaraj Street, Anna Nagar, Chennai</p>
         </div>
 
         <div className="share">

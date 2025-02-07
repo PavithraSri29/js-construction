@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 function About() {
+  const [counterActive, setCounterActive] = useState(false);
+
+  const stats = [
+    { num: 30, text: "years of experience" },
+    { num: 156, text: "projects completed" },
+    { num: 220, text: "engineers" },
+    { num: 25, text: "award winning" },
+  ];
+
   return (
     <section className="about" id="about">
       <h1 className="heading">about us</h1>
@@ -20,27 +31,18 @@ function About() {
         </div>
       </div>
 
-      <div className="box-container">
-        <div className="box">
-          <h3>30+</h3>
-          <p>years of experience</p>
+      <ScrollTrigger onEnter={() => setCounterActive(true)} triggerOnce={true}>
+        <div className="box-container">
+          {stats.map((stat, index) => (
+            <div className="box" key={index}>
+              <h3>
+                {counterActive ? <CountUp start={0} end={stat.num} duration={2} separator="," /> : "0"}+
+              </h3>
+              <p>{stat.text}</p>
+            </div>
+          ))}
         </div>
-
-        <div className="box">
-          <h3>156+</h3>
-          <p>projects completed</p>
-        </div>
-
-        <div className="box">
-          <h3>220+</h3>
-          <p>engineers</p>
-        </div>
-
-        <div className="box">
-          <h3>25+</h3>
-          <p>award winning</p>
-        </div>
-      </div>
+      </ScrollTrigger>
     </section>
   );
 }
